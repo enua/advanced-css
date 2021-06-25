@@ -1,20 +1,3 @@
-/*
-COLORS
-
-Primary: #02b4f7
-Primary light: #02d3f7
-Primary dark: #0391f7
-
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
-*/
 :root {
   --color-primary: #02b4f7;
   --color-primary-light: #02d3f7;
@@ -29,7 +12,7 @@ Grey dark 3: #999
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
 
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3)
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
 }
 
 * {
