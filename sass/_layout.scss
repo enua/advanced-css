@@ -1,7 +1,7 @@
 .container {
   max-width: 120rem;
   margin: 8rem auto;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-grey-light-0);
   box-shadow: var(--shadow-dark);
 
   min-height: 50rem;
@@ -10,8 +10,8 @@
 .header {
   font-size: 1.4rem;
   height: 7rem;
-  background: #fff;
-  border-bottom: var(--color-grey-light-2);
+  background: var(--color-grey-light-0);
+  border-bottom: 1px solid var(--color-grey-light-2);
 
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,6 @@
 }
 
 .portfolio-view {
-  background-color: orange;
   flex: 1;
 
   height: 80rem; //test
