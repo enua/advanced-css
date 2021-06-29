@@ -8,9 +8,203 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
-        <title>trillo &mdash; Your all-in-one booking app</title>
+        <title>Hello, my name is &mdash; Enrique Nuñez</title>
     </head>
     <body>
-        
+        <div class="container">
+            <header class="header">
+                <img src="img/logo-3.png" alt="logo" class="logo">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search projects">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bubbles"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user-7.jpg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Enrique Nuñez</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home3"></use>
+                                    <span>Home</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-airplane"></use>
+                                    <span>Projects</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-location"></use>
+                                    <span>Things</span>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map2"></use>
+                                    <span>More things</span>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="legal"> &copy; 2021. Use me if you want</div>
+                </nav>
+                <main class="portfolio-view">
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/project-01.png" alt="Photo project 1" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/project-02.png" alt="Photo project 2" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/project-03.png" alt="Photo project 3" class="gallery__photo">
+                        </figure>
+                    </div>
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Hi, my name is Enrique
+                        </h1>
+                        <div class="overview__stars">
+                            <svg class="overview__icon-stars">
+                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-stars">
+                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-stars">
+                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-stars">
+                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-stars">
+                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                            </svg>
+                        </div>
+                        <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                <use xlink:href="img/sprite.svg#icon-location"></use>
+                                <span></span>
+                                <button class="btn-inline">Valencia, Spain</button>
+                            </svg>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">8.6</div>
+                            <div class="overview__rating-count">429 votes</div>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">Hi there. You are actually in a simple css flex-box learning landing page. If you want to
+                                open some other self-learning language skills be free to open it and diggit. Also you can open my github and use it with
+                                propper license.
+                            </p>
+                            <p class="paragraph">
+                                If you want to contact me for some reason, please look for me on linkedin. I will respond as soon as can.
+                            </p>
+                            <p class="paragraph">
+                                Let me to tell you some of my actual skills:
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">Javascript developer +4y.</li>
+                                <li class="list__item">NextJs, Express with Js or TS</li>
+                                <li class="list__item">Golang Bakender (18mo.)</li>
+                                <li class="list__item">Skilled with Angular</li>
+                                <li class="list__item">Skilled with Vue + TS</li>
+                                <li class="list__item">Knowing React</li>
+                                <li class="list__item">Skilled with Git</li>
+                                <li class="list__item">Using Jira + Bitbucket</li>
+                                <li class="list__item">Unit testing, high coverage</li>
+                                <li class="list__item">Pull requests, Code reviews,...</li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Some clients just recommend this developer
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="img/user-3.jpg" alt="" class="recommend__photo">
+                                    <img src="img/user-4.jpg" alt="" class="recommend__photo">
+                                    <img src="img/user-5.jpg" alt="" class="recommend__photo">
+                                    <img src="img/user-6.jpg" alt="" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-reviews">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-1.jpg" alt="user 1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Nick Smith</p>
+                                        <p class="review__user-date">Feb 23rd, 2021</p>
+                                    </div>
+                                    <div class="review__rating">7.8</div>
+                                </figcaption>
+                            </figure>
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-2.jpg" alt="user 1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Mary Thomas</p>
+                                        <p class="review__user-date">Apr 12th, 2021</p>
+                                    </div>
+                                    <div class="review__rating">8.3</div>
+                                </figcaption>
+                            </figure>
+
+                            <button class="btn-inline">Ver más <span>&rarr;</span></button>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h2 class="contact__book-now">
+                            This is a nice hover effect!
+                        </h2>
+                        <button class="btn">
+                            <span class="btn__visible">Contact now</span>
+                            <span class="btn__invisible">And show this!</span>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
     </body>
 </html>
