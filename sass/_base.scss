@@ -35,6 +35,10 @@ $breakpoint-smallest: 31.25em; // 500px
   box-sizing: inherit;
 }
 
+*:link {
+  text-decoration: none;
+}
+
 html {
   box-sizing: border-box;
   font-size: 63.5%; //1rem = 10px --> 10px/16px(browser default) = 62.5%

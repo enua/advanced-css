@@ -40,7 +40,7 @@
 
     &::-webkit-input-placeholder {
       font-weight: 100;
-      color: var(--color-grey-light-5);
+      color: var(--color-grey-dark-2);
     }
   }
 
@@ -598,11 +598,18 @@
     width: 100%;
     display: block;
   }
-  
+
   &__description {
     text-align: justify;
     padding-top: 1rem;
     font-size: 1.5rem;
+  }
+  
+  &__icon-skills {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: .5rem;
+    fill: var(--color-grey-dark-3);
   }
   
   &__actions {

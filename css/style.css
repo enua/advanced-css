@@ -24,6 +24,9 @@
 *::after {
   box-sizing: inherit; }
 
+*:link {
+  text-decoration: none; }
+
 html {
   box-sizing: border-box;
   font-size: 63.5%; }
@@ -152,7 +155,7 @@ body {
       background-color: var(--color-grey-light-3); }
     .search__input::-webkit-input-placeholder {
       font-weight: 100;
-      color: var(--color-grey-light-5); }
+      color: var(--color-grey-dark-2); }
   .search__button {
     border: none;
     background-color: var(--color-grey-light-2); }
@@ -536,6 +539,11 @@ body {
     text-align: justify;
     padding-top: 1rem;
     font-size: 1.5rem; }
+  .card__icon-skills {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: .5rem;
+    fill: var(--color-grey-dark-3); }
   .card__actions {
     display: flex;
     flex-direction: column;

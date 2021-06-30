@@ -6,7 +6,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>Hello, my name is &mdash; Enrique Nuñez</title>
@@ -17,7 +17,7 @@
                 <img src="img/logo-3.png" alt="logo" class="logo">
 
                 <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search projects">
+                    <input type="text" id="search_me" class="search__input" placeholder="Filter projects">
                     <button class="search__button">
                         <svg class="search__icon">
                             <use xlink:href="img/sprite.svg#icon-search"></use>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="user-nav__user">
                         <img src="img/user-7.jpg" alt="User photo" class="user-nav__user-photo">
-                        <span class="user-nav__user-name">Enrique Nuñez</span>
+                        <a class="user-nav__user-name" href="https://github.com/enua?tab=repositories" target="_blank">Enrique Nuñez</a>
                     </div>
                 </nav>
             </header>
@@ -83,17 +83,7 @@
                     <div class="legal"> &copy; 2021. Use me if you want</div>
                 </nav>
                 <main class="portfolio-view">
-                    <!-- <div class="gallery">
-                        <figure class="gallery__item">
-                            <img src="img/project-01.png" alt="Photo project 1" class="gallery__photo">
-                        </figure>
-                        <figure class="gallery__item">
-                            <img src="img/project-02.png" alt="Photo project 2" class="gallery__photo">
-                        </figure>
-                        <figure class="gallery__item">
-                            <img src="img/project-03.png" alt="Photo project 3" class="gallery__photo">
-                        </figure>
-                    </div> -->
+                    
                     <div class="overview">
                         <!-- <h1 class="overview__heading">
                             Skills:
@@ -155,39 +145,16 @@
                         </div>
                         <div class="overview__rating">
                             <div class="overview__rating-average">8.6</div>
-                            <div class="overview__rating-count">avg degree</div>
+                            <div class="overview__rating-count">Final grade</div>
                         </div>
                     </div>
 
-                    <div class="project">
+                    <div class="project" id="project1">
                         <div class="card">
-                            <div class="card__item">
-                                <h3 class="card__title">title 01</h3>
-                                <figure class="card__figure">
-                                    <img src="img/project-01.png" alt="Photo card 1" class="card__photo">
-                                </figure>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
-                                </p>
-                                <div class="card__actions">
-                                    <a class="btn btn-primary">Open</a>
-                                </div>
-                            </div>
-                            <div class="card__item">
-                                <h3 class="card__title">title 02</h3>
-                                <figure class="card__figure">
-                                    <img src="img/project-02.png" alt="Photo card 1" class="card__photo">
-                                </figure>
-                                <p class="card__description">
-                                    Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
-                                </p>
-                                <div class="card__actions">
-                                    <a class="btn btn-primary">Open</a>
-                                </div>
-                            </div>
-                            
+                            <!-- projects filtered by js -->
                         </div>
                     </div>
+
                     <div class="detail">
                         <div class="description">
                             <p class="paragraph">Hi there. You are actually in a simple css flex-box learning landing page. If you want to
