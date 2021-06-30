@@ -84,6 +84,9 @@ body {
 .portfolio-view {
   flex: 1; }
 
+.project {
+  display: block; }
+
 .detail {
   font-size: 1.4rem;
   display: flex;
@@ -283,7 +286,7 @@ body {
   border-top: var(--line);
   border-bottom: var(--line);
   display: flex;
-  align-items: center; }
+  justify-content: space-between; }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
@@ -294,14 +297,20 @@ body {
       .overview__heading {
         font-size: 1.8rem;
         padding: 1.25rem 2rem; } }
-  .overview__stars {
-    margin-right: auto;
-    display: flex; }
-  .overview__icon-stars, .overview__icon-location {
+  .overview__skills {
+    margin-left: 3.5rem;
+    display: flex;
+    align-items: center;
+    margin-right: auto; }
+  .overview__icon-skills {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-right: .5rem;
+    fill: var(--color-grey-dark-1); }
+  .overview__icon-location {
     width: 1.75rem;
     height: 1.75rem;
-    fill: var(--color-primary); }
-  .overview__icon-location {
+    fill: var(--color-primary);
     margin-right: .5rem; }
   .overview__location {
     font-size: 1.2rem;
@@ -335,6 +344,7 @@ body {
         font-size: .5rem; } }
 
 .btn-inline {
+  text-decoration: none;
   border: none;
   color: var(--color-primary);
   font-size: inherit;
@@ -504,3 +514,32 @@ body {
   .btn:focus {
     outline: none;
     animation: pulsate 1s infinite; }
+
+.card {
+  display: flex;
+  flex-wrap: wrap; }
+  .card__item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 40%;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 4rem;
+    box-shadow: var(--shadow-dark); }
+  .card__title {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .card__photo {
+    width: 100%;
+    display: block; }
+  .card__description {
+    text-align: justify;
+    padding-top: 1rem;
+    font-size: 1.5rem; }
+  .card__actions {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end; }
+  .card .btn {
+    padding: 1rem 2rem;
+    text-align: center; }

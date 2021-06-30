@@ -241,7 +241,7 @@
   border-top: var(--line);
   border-bottom: var(--line);
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 
   &__heading {
     font-size: 2.25rem;
@@ -256,19 +256,26 @@
     }
   }
 
-  &__stars {
-    //flex: 1;
-    margin-right: auto;
+  &__skills {
+    margin-left: 3.5rem;
     display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  &__icon-skills {
+
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-right: .5rem;
+    fill: var(--color-grey-dark-1);
   }
 
-  &__icon-stars, &__icon-location {
+
+  &__icon-location {
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--color-primary);
-  }
-
-  &__icon-location {
     margin-right: .5rem;
   }
 
@@ -320,6 +327,7 @@
 // 7. BUTTON INLINE ==========================
 
 .btn-inline {
+  text-decoration: none;
   border: none;
   color: var(--color-primary);
   font-size: inherit;
@@ -563,4 +571,48 @@
     animation: pulsate 1s infinite;
   }
 
+}
+
+// 13. Project ==========================
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 40%;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 4rem;
+    box-shadow: var(--shadow-dark);
+  }
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  &__figure {
+  }
+  
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+  
+  &__description {
+    text-align: justify;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  
+  & .btn {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
 }
