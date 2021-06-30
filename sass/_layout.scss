@@ -22,10 +22,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: $breakpoint-smallest) {
+    height: 12rem;
+    align-content: space-around;
+    flex-wrap: wrap; // move item if there is not enought space
+  }
 }
 
 .content {
   display: flex;
+
+  @media only screen and (max-width: $breakpoint-medium) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -44,12 +54,24 @@
   // height: 80rem; //test
 }
 
+.project {
+  display: block;
+}
+
 .detail {
   font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+
+  @media only screen and (max-width: $breakpoint-medium) {
+    padding: 3em;
+  }
+  
+  @media only screen and (max-width: $breakpoint-small) {
+    flex-direction: column;
+  }
   
 }
 
@@ -60,6 +82,16 @@
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  @media only screen and (max-width: $breakpoint-medium) {
+    padding: 2em;
+    margin-right: 3rem;
+  }
+  
+  @media only screen and (max-width: $breakpoint-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 .user-reviews {

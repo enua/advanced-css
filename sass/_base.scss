@@ -18,8 +18,11 @@
   --line: 1px solid var(--color-grey-light-2);
 }
 
-$breakpoint-largest: 75rem; //1200px
-$breakpoint-large: 68.75rem; //1100px
+$breakpoint-largest: 75em; //1200px
+$breakpoint-large: 68.75em; //1100px
+$breakpoint-medium: 56.25em; //900px 900/16
+$breakpoint-small: 37.5em; // 600px
+$breakpoint-smallest: 31.25em; // 500px
 
 * {
   margin: 0;
@@ -30,6 +33,10 @@ $breakpoint-large: 68.75rem; //1100px
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+*:link {
+  text-decoration: none;
 }
 
 html {
