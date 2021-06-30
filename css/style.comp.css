@@ -305,9 +305,6 @@ body {
     display: flex;
     align-items: center;
     margin-right: auto; }
-    @media only screen and (max-width: 37.5em) {
-      .overview__skills {
-        flex-wrap: wrap; } }
   .overview__icon-skills {
     width: 3.75rem;
     height: 3.75rem;
@@ -532,17 +529,12 @@ body {
     padding: 2rem;
     margin: 4rem;
     box-shadow: var(--shadow-dark); }
-    @media screen and (max-width: 56.25em) {
-      .card__item {
-        flex: 0 0 98%;
-        margin: 2rem 1rem; } }
   .card__title {
     font-size: 2rem;
     text-transform: uppercase; }
   .card__photo {
     width: 100%;
-    display: block;
-    border: 1px solid var(--color-grey-light-3); }
+    display: block; }
   .card__description {
     text-align: justify;
     padding-top: 1rem;
