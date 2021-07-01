@@ -1,4 +1,8 @@
 /* jshint esversion: 6 */
+const URL = {
+  baseUrl: 'https://',
+  mainDomain: 'strin.es/',
+};
 
 generateProjects = (filter) => {
 
@@ -7,24 +11,30 @@ generateProjects = (filter) => {
       name: 'Mars Rover',
       description: 'A single rover was sent to mars. You can deploy on space, send commands and move it around map with simple control buttons. Keep away from map limits!',
       image: 'img/project-01.png',
-      link: 'https://mars-rover.strin.es/',
+      link: URL.baseUrl + 'mars-rover.' + URL.mainDomain,
       skills: ['icon-git', 'icon-angular', 'icon-terminal', 'icon-typescript'],
     },
     {
       name: 'Gnommes Town',
       description: 'This is the Gnomme town. You can look in this archive for and find amazing information and relations between all citizens!',
       image: 'img/project-02.png',
-      link: 'https://gnomme-town.strin.es/',
+      link: URL.baseUrl + 'gnomme-town.' + URL.mainDomain,
       skills: ['icon-git', 'icon-angular', 'icon-typescript'],
     },
     {
       name: 'React learning',
       description: 'I choose this to learn and increase skills throw react, redux...',
       image: 'img/project-03.png',
-      link: 'https://react.strin.es/',
+      link: URL.baseUrl + 'react.' + URL.mainDomain,
       skills: ['icon-git', 'icon-react', 'icon-js-square'],
     },
-    
+    {
+      name: 'Advanced css',
+      description: 'Advanced css learned with this course and grid layout with flex-box for personal portfolio. Some js filter on search...',
+      image: 'img/project-04.png',
+      link: URL.baseUrl + URL.mainDomain,
+      skills: ['icon-git', 'icon-html5', 'icon-css3-alt', 'icon-js-square' ],
+    }
   ];
 
   generateHtml(filterByName(projectsValues, filter));

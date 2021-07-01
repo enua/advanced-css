@@ -242,6 +242,7 @@
   border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
+  min-height: 8rem;
 
   &__heading {
     font-size: 2.25rem;
@@ -273,6 +274,13 @@
     height: 3.75rem;
     margin-right: .5rem;
     fill: var(--color-grey-dark-1);
+    transition: all .3s;
+
+    &:hover {
+      fill: #000000;
+      width: 5.75rem;
+      height: 5.75rem;
+    }
   }
 
 
@@ -581,18 +589,24 @@
 .card {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: $breakpoint-medium) {
+    padding: 3rem;
+  }
   
   &__item {
+    flex: 1 0 40%;
+
     display: flex;
     flex-direction: column;
-    flex: 0 0 40%;
     justify-content: space-between;
+    
     padding: 2rem;
     margin: 4rem;
     box-shadow: var(--shadow-dark);
 
     @media screen and (max-width: $breakpoint-medium) {
-      flex: 0 0 98%;
+      flex: 1 0 97%;
       margin: 2rem 1rem;
     }
   }
@@ -600,6 +614,7 @@
     font-size: 2rem;
     text-transform: uppercase;
   }
+
   &__figure {
   }
   
