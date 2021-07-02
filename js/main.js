@@ -34,6 +34,13 @@ generateProjects = (filter) => {
       image: 'img/project-04.png',
       link: URL.baseUrl + URL.mainDomain,
       skills: ['icon-git', 'icon-html5', 'icon-css3-alt', 'icon-js-square' ],
+    },
+    {
+      name: 'React Netflix clone',
+      description: 'WIP React clone of netflix streaming app',
+      image: 'img/project-05.png',
+      link: URL.baseUrl + URL.mainDomain,
+      skills: ['icon-git', 'icon-react'],
     }
   ];
 
