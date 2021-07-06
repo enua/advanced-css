@@ -13,7 +13,7 @@ generateProjects = (filter) => {
       image: 'img/project-01.png',
       link: URL.baseUrl + 'mars-rover.' + URL.mainDomain,
       skills: ['icon-git', 'icon-angular', 'icon-terminal', 'icon-typescript'],
-    },
+    }/* ,
     {
       name: 'Gnommes Town',
       description: 'This is the Gnomme town. You can look in this archive for and find amazing information and relations between all citizens!',
@@ -41,7 +41,7 @@ generateProjects = (filter) => {
       image: 'img/project-05.png',
       link: URL.baseUrl + URL.mainDomain,
       skills: ['icon-git', 'icon-react'],
-    }
+    } */
   ];
 
   generateHtml(filterByName(projectsValues, filter));
@@ -49,8 +49,10 @@ generateProjects = (filter) => {
 };
 
 getSkillsIcons = (skills) => {
-  return skills.map((skill) => '<svg class="card__icon-skills"><use xlink:href="img/sprite.svg#' + skill + '"></use></svg>');
-}; 
+  return skills.map((skill) => {
+    return '<svg class="card__icon-skills"><use xlink:href="img/sprite.svg#' + skill + '"></use></svg>';
+  })
+};
 
 generateHtml = (projects) => {
   const card = document.querySelector('.card');
@@ -72,7 +74,7 @@ generateHtml = (projects) => {
         '<img src="' + project.image +'" alt="' + project.name +'" class="card__photo"></img>' +
         '</figure>' +
         '<p class="card__description">' + project.description + '</p>' +
-        '<p class="card__skills">' + getSkillsIcons(project.skills) + '</p>' +
+        '<p class="card__skills">' + getSkillsIcons(project.skills).join('') + '</p>' +
         '<div class="card__actions"><a target="_blank" href="' + project.link + '" class="btn btn-primary">Open</a></div>' +
         '</div>'
         );
