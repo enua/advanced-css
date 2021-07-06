@@ -13,7 +13,7 @@ generateProjects = (filter) => {
       image: 'img/project-01.png',
       link: URL.baseUrl + 'mars-rover.' + URL.mainDomain,
       skills: ['icon-git', 'icon-angular', 'icon-terminal', 'icon-typescript'],
-    }/* ,
+    },
     {
       name: 'Gnommes Town',
       description: 'This is the Gnomme town. You can look in this archive for and find amazing information and relations between all citizens!',
@@ -41,7 +41,7 @@ generateProjects = (filter) => {
       image: 'img/project-05.png',
       link: URL.baseUrl + URL.mainDomain,
       skills: ['icon-git', 'icon-react'],
-    } */
+    }
   ];
 
   generateHtml(filterByName(projectsValues, filter));
